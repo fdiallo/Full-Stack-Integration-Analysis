@@ -1,0 +1,9 @@
+
+REFLECTION:
+
+
+1. As a Full Stack developer we may encounter an error such as "CORS policy error: No 'Access-Control-Allow-Origin' header…". This type of error is called Cross-Origin Resource Sharing. A CORS (Cross-Origin Resource Sharing) error is a security block enforced by a browser that happens when a web application on one specific domain or port requests resources from a different domain or port. For instance, during development your local front end client (for instance a React client) may be running on http://localhost:3000 and the back end server (for instance an Express server) running on http://localhost:5000. Thus, these two origins differ from listening from different port numbers. The browser will block response from the server unless the server explicitly permits the front end client
+
+2. It is considered a bad practice to hardcode API URLs directly into client-side React code for several reasons including environment migration, maintenance and updates, testing and debugging, and security exposure. For instance when developing an application transition from one environment to another such development, staging, production. Thus manually hardcoding the api urls can be time consuming and configuration errors. Additionally, hardcoding api urls can lead to exposing internal routing structures and subdomain to attack from hackers.
+
+3. One key advantage of using axios over fetch for a complex application is that it automatically parses JSON data directly from the response. fetch is a built-in Javascript library and very handy for small projects and does not require any additional installation. With fetch we get the response first and then transform it into json. axios directly renders the response in json format. Additionally, axios automatically rejects on HTTP errors and offers built-in support for interceptors
